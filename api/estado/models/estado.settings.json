@@ -1,8 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "estados",
+  "collectionName": "estado",
   "info": {
-    "name": "Estado"
+    "name": "Estado",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,15 +12,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Nome": {
+    "nome": {
       "type": "string"
     },
-    "UF": {
+    "uf": {
       "type": "string"
     },
-    "municipios": {
-      "via": "estado",
-      "collection": "municipios"
+    "municipio": {
+      "collection": "municipios",
+      "via": "estado"
     }
   }
 }

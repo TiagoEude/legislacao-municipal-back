@@ -12,16 +12,16 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Nome": {
+    "nome": {
       "type": "string"
     },
-    "estado": {
-      "model": "estado",
-      "via": "municipios"
+    "publicacao": {
+      "collection": "publicacao",
+      "via": "municipio"
     },
-    "publicacaos": {
+    "estado": {
       "via": "municipio",
-      "collection": "publicacao"
+      "model": "estado"
     }
   }
 }

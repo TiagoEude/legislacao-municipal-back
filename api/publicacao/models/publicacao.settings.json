@@ -38,8 +38,8 @@
       "pluginOptions": {}
     },
     "municipio": {
-      "model": "municipios",
-      "via": "publicacaos"
+      "via": "publicacao",
+      "model": "municipios"
     }
   }
 }
