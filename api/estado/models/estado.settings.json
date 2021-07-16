@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "estados",
+  "info": {
+    "name": "Estado"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nome": {
+      "type": "string"
+    },
+    "UF": {
+      "type": "string"
+    },
+    "municipios": {
+      "via": "estado",
+      "collection": "municipios"
+    }
+  }
+}

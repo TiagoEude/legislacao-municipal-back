@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "municipios",
+  "info": {
+    "name": "Municipio",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nome": {
+      "type": "string"
+    },
+    "estado": {
+      "model": "estado",
+      "via": "municipios"
+    },
+    "publicacaos": {
+      "via": "municipio",
+      "collection": "publicacao"
+    }
+  }
+}

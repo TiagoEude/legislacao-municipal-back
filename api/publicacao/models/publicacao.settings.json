@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "publicacaos",
+  "info": {
+    "name": "Publicacao",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "descricao": {
+      "type": "string"
+    },
+    "tipo": {
+      "type": "enumeration",
+      "enum": [
+        "Lei",
+        "Decreto"
+      ]
+    },
+    "data_publicacao": {
+      "type": "date"
+    },
+    "arquivo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "municipio": {
+      "model": "municipios",
+      "via": "publicacaos"
+    }
+  }
+}
